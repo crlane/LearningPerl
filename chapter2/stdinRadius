@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+$radius = <STDIN>;
+$pi = 3.1415926;
+$circumference = 2*$radius*$pi;
+print $circumference;

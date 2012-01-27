@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+print "Please enter a name: ";
+$name = <STDIN>;
+print "Please enter a number: ";
+$num= <STDIN>;
+
+while($num>0){
+   print "$name";
+   $num-=1;
+}
