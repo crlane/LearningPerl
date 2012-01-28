@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+if(($radius = <STDIN>)< 0){
+    $circumference = 0;
+}
+
+else {
+    $pi = 3.1415926;
+    $circumference = 2*$radius*$pi;
+}
+
+print $circumference;
