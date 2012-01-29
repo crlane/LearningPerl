@@ -5,7 +5,4 @@ $name = <STDIN>;
 print "Please enter a number: ";
 $num= <STDIN>;
 
-while($num>0){
-   print "$name";
-   $num-=1;
-}
+print $name x $num;
