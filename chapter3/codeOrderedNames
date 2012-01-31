@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w 
-print sort <STDIN>;
+print "Enter some names\n";
 chomp(@names = <STDIN>);
 
 @names = sort @names;
