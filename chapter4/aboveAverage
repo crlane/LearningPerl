@@ -1,0 +1,40 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+
+#Write a subroutine name total which returns the toal of a list of numebers.
+
+
+
+above_average(1...100);
+sub above_average{
+    
+    my $sum; 
+    for(@_) {
+        $sum += $_;
+    }
+
+    my $average = $sum / @_;
+
+    print $average;
+
+    for(@_){
+    
+        print "$_\n" if ($_ > $average);
+    }
+}
+
+
+sub testProgram {
+
+    my @fred = above_average(1..10);
+    print "\@fred is @fred\n";
+    print "(Should be 6 7 8 9 10)\n";
+    my @barney = above_average(100, 1..10);
+    print "\@barney is @barney\n";
+    print "(Should be just 100)\n";
+
+}
+
+

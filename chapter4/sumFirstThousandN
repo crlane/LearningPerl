@@ -1,0 +1,21 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+
+#Write a subroutine name total which returns the toal of a list of numebers.
+
+
+
+sub total {
+    
+    my $sum;
+    for(@_){
+        $sum += $_;
+    }
+
+    return $sum;
+}
+
+
+print &total(1...1000);
