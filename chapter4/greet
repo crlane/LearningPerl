@@ -1,0 +1,30 @@
+#!/usr/bin/perl -w
+
+use strict;
+use 5.010;
+
+&test();
+
+sub greet{
+    
+
+
+    state $last; 
+
+    for (@_){
+        my $current = $_;
+    
+        if (defined($last)) {
+            print "Hi $current! $last is here too!\n" ;
+        } else {
+            print "Hi $current! You're the first one here\n";
+        }
+        $last = $current;
+    }
+}
+
+
+sub test {
+    greet("Fred");
+    greet("Barney");
+}
