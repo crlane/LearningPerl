@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+my %word_count;
+
+while(<>){
+   chomp (my $word = $_);
+    if (exists $word_count{$word}){
+        $word_count{$word}++; 
+    } else{
+        $word_count{$word} = 1;
+    }
+
+}
+
+for my $key (sort keys %word_count){
+    print "$key => $word_count{$key}\n"
+}
+
