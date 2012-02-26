@@ -1,0 +1,37 @@
+#!/usr/bin/perl -w
+
+
+use strict;
+use 5.010;
+
+print "Please enter text on separate lines:\n";
+
+my @lines;
+while(<>){
+    chomp;
+    push @lines, $_;
+}
+
+&printFormat(@lines);
+
+sub printFormat{
+        chomp (my $width = $_[0]);
+        shift; #remove the numeric argument from the printing
+        my $format = "%" . $width . "s\n"; 
+        &printRuler($width+20);
+        for (@_){
+            printf $format, $_; 
+        }
+}
+
+sub printRuler(){
+    my $count = 0; 
+    for(@_){
+        while($count < ($_/10)){
+            print (1...9);
+            print 0;
+            $count++;
+        }
+    }
+    print "\n";
+}
