@@ -1,0 +1,32 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+
+#&getLongest(%ENV);
+&printENV();
+
+sub printENV {
+
+    for my $key (sort keys %ENV){
+        my $longestKey = &getLongest(keys %ENV);
+        my $longestValue = &getLongest(values %ENV);
+        my $keys_pattern = "%${longestKey}s";
+        my $values_pattern = "%-${longestValue}s\n";
+        printf "$keys_pattern => $values_pattern", $key , $ENV{$key};
+    }
+
+}
+
+
+sub getLongest{
+
+    my $longest = 0;
+    for (@_){
+        if($longest < length $_){
+            $longest = length $_;
+        } 
+    }
+    return $longest;
+}
+
