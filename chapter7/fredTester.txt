@@ -1,0 +1,22 @@
+1 fred
+2 Fred
+3 ffred
+4 Ffred
+5 frederick
+6 Frederick
+7 Alfred
+8 AlFred
+9 FRED
+10 FReD
+11 FREd
+12 FrED
+13 FreD
+14 fRED
+15 freD
+16 Mr. Fred Flinstone
+17 Dr. Fred Flinstone
+18 ........
+19 ..
+20 _______. 
+21 a.a
+22 .a.
