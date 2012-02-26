@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+print "What name would you like to look up?\n";
+
+my %names_hash = (
+    cameron => "lane",
+    stephanie => "lane",
+    ryan => "lane",
+    clay => "kelsh",
+    charlie => "wilhite" ,
+    amber => "wilhite",
+    "rena evelyn" => "wilhite",
+    david => "wilhite",
+);
+
+chomp (my $answer = <STDIN>);
+
+print "${answer}'s last name is $names_hash{$answer}";
