@@ -1,29 +1,31 @@
-1 fred
-2 Fred
-3 ffred
-4 Ffred
-5 frederick
-6 Frederick
-7 Alfred
-8 AlFred
-9 FRED
-10 FReD
-11 FREd
-12 FrED
-13 FreD
-14 fRED
-15 freD
-16 fRed
-17 frEd
-18 fREd
-19 Mr. Fred Flinstone
-20 Dr. Fred Flinstone
-21 ........
-22 ..
-23 _______. 
-24 a.a
-25 .a.
-26 Mississippi
-27 Bamm-Bamm
-28 llama
-29 dimmer
+fred
+Fred
+ffred
+Ffred
+frederick
+Frederick
+Alfred
+AlFred
+FRED
+FReD
+FREd
+FrED
+FreD
+fRED
+freD
+fRed
+frEd
+fREd
+Mr. Fred Flinstone
+Dr. Fred Flinstone
+........
+..
+_______. 
+a.a
+.a.
+Mississippi
+Bamm-Bamm
+llama
+dimmer
+fred and wilma
+Fred and Wilma
