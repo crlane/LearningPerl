@@ -3,5 +3,6 @@ use strict;
 use 5.010;
 
 while (<>){
+    #could also do this case insensitive with /i  
     print $_ if (m/fred/ and m/wilma/);
 }
