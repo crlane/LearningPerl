@@ -13,10 +13,13 @@
 13 FreD
 14 fRED
 15 freD
-16 Mr. Fred Flinstone
-17 Dr. Fred Flinstone
-18 ........
-19 ..
-20 _______. 
-21 a.a
-22 .a.
+16 fRed
+17 frEd
+18 fREd
+19 Mr. Fred Flinstone
+20 Dr. Fred Flinstone
+21 ........
+22 ..
+23 _______. 
+24 a.a
+25 .a.
