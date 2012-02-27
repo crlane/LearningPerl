@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+while (<>){
+    #this works, but prints some unexpected lines because of the way that I've printed line numbers at the beginning of lines
+    print $_ if (m/([^\s])\1/);
+}
