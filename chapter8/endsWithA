@@ -1,0 +1,15 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+my $pattern = '\b[\w]*a\b';
+
+while (<>) {                   # take one input line at a time
+	chomp;
+	if (/$pattern/) {
+		print "Matched: |$`<$&>$'|\n";  # the special match vars
+	} else {
+		print "No match: |$_|\n";
+	}
+}
+
