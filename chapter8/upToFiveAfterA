@@ -1,0 +1,16 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+my $pattern = '\b(?<word>[\w]*a)\b(?<afterword>.{0,5})';
+
+while (<>) {                   # take one input line at a time
+	chomp;
+	if (/$pattern/) {
+		print "Matched: |$`<$&>$'|\n";  # the special match vars
+                print "\$+{word} contains '$+{word}' followed by '$+{afterword}'\n" unless (length $+{afterword}== 0);
+	} else {
+		print "No match: |$_|\n";
+	}
+}
+
