@@ -1,0 +1,11 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+my $pattern = '^.*[\s]+$';
+
+while (<>) {                   # take one input line at a time
+	chomp;
+        print $. . ". " . $_ . "X\n" if (/$pattern/);
+}
+
